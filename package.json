@@ -11,7 +11,7 @@
     "electron": "NODE_ENV=dev electron .",
     "karma": "./node_modules/.bin/karma start",
     "test:karma": "./node_modules/.bin/karma start --single-run",
-    "postinstall": "gulp build"
+    "postinstall": "npm intall bower && bower install && gulp build"
   },
   "main": "electron.js",
   "dependencies": {
