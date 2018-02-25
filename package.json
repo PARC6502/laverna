@@ -10,7 +10,8 @@
     "start": "node ./server.js",
     "electron": "NODE_ENV=dev electron .",
     "karma": "./node_modules/.bin/karma start",
-    "test:karma": "./node_modules/.bin/karma start --single-run"
+    "test:karma": "./node_modules/.bin/karma start --single-run",
+    "postinstall": "gulp build";
   },
   "main": "electron.js",
   "dependencies": {
