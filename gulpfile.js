@@ -51,6 +51,14 @@ gulp.task('build', plugins.sequence(
     'htmlManifest'
 ));
 
+gulp.task('heroku:prod', plugins.sequence(
+    // 'test',
+    'clean:dist',
+    ['prism', 'less'],
+    ['copy', 'require', 'htmlmin', 'cssmin'],
+    'htmlManifest'
+));
+
 /**
  * Prepare the release files.
  */
